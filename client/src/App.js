@@ -5,7 +5,8 @@ import Landing from "./components/layout/Landing";
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Alert from './components/layout/Alert';
-import { loadUser } from './actions/auth';
+//import { loadUser } from './actions/auth';
+import setAuthToken from './utils/setAuthToken';
 
 //redux install
 import { Provider } from 'react-redux';
@@ -17,7 +18,7 @@ if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
 const App = () => {
-  
+
 
   return (
 
